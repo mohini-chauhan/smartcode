@@ -22,7 +22,7 @@ function App() {
         <Testimonial/>
         <Faq/>
         <Footer/>
-        <Carouseltest/>
+        
     </div>
   );
 }

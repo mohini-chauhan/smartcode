@@ -1,11 +1,36 @@
-import React from 'react'
+import React, {useState, useEffect } from 'react'
 import logo from "./logo.svg";
 import "./Nav.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
+
+
 const Navbarsection = () => {
+
+       //navbar scroll when active state
+       const [navbar, setNavbar] = useState(false)
+  
+  
+       //navbar scroll change button function
+       const changebutton = () => {
+         console.log(window.scrollY)
+         if (window.scrollY >= 66) {
+           setNavbar(true)
+         } else {
+           setNavbar(false)
+         }
+       }
+   
+       useEffect(() => {
+        changebutton()
+           // adding the event when scroll change background
+           window.addEventListener("scroll", changebutton)
+         })
+
+
+
     return (
         <div className="navbar-container fixed-top ">
             <nav className="navbar navbar-expand-lg navbar-light ">
@@ -26,13 +51,14 @@ const Navbarsection = () => {
 
                             
                         </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="sign-btn-button" type="submit">Sign In</button>
+                        <form className={navbar?"d-flex-scroll":'d-flex'}>
+                            <input className={navbar?"form-control me-2":"form-control-w"} type="search" placeholder="Enter you email" aria-label="Search"/>
+                            <button className="sign-btn-button" type="submit">{navbar?'Sign Up':'Sign In'}</button>
                         </form>
                     </div>
                 </div>
             </nav>
+
             
         </div>
     )

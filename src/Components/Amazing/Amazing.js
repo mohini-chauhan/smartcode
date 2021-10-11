@@ -1,8 +1,31 @@
 import "./Amazing.css";
-import React from 'react';
-import cloud from "./cloud3.png"
+import React, {useState, useEffect } from 'react';
+import cloudimg from "./cloud3.png"
+import cloud_scroll from "./Cloud-scroll.png"
 
 const Amazing = () => {
+
+           //Amazing scroll when active state
+           const [cloud, setCloud] = useState(false)
+  
+           // scroll display cloud function
+           const displaycloud = () => {
+             console.log(window.scrollY)
+             if (window.scrollY >= 1850 && !cloud) {
+                setCloud(true)
+             } else if(window.scrollY < 1850 && cloud) {
+                setCloud(false)
+             }
+           }
+       
+           useEffect(() => {
+            displaycloud()
+               // adding the event when scroll change background
+               window.addEventListener("scroll", displaycloud)
+             })
+
+
+
     return (
         <div className="amazing-container">
             <div className="amazing-wrapper">
@@ -15,7 +38,8 @@ const Amazing = () => {
                     </article>
                 </section>
                 <section className="cloud-container">
-                    <img src={cloud} alt="cloud"/>
+                    <img className={cloud?"cloud-effect-in":"cloud-effect-out"} src={cloud_scroll} alt="effect"/>
+                    <img src={cloudimg} alt="cloud"/>
                 </section>
             </div>
             

@@ -26,13 +26,23 @@ background: var(--primary-nav-white);
 .navbar-nav .nav-item .nav-link{
     color:var(--primary-black);
 }
-.d-flex{
+.d-flex-scroll{
     border: 2px solid var(--primary-light-nav-grey);
     border-radius: 5px;
+    display: flex !important;
+
+}
+.d-flex{
+    margin-right: 60px;
 
 }
 .form-control{
     border: none !important;
+
+}
+.form-control-w{
+    display:none;
+
 }
 
 
@@ -43,7 +53,7 @@ background: var(--primary-nav-white);
     border-radius: 5px;
     border-style: none;
     background:var(--primary-nav-orange);
-    color:var(--primary-white);
+    color:var(--primary-nav-white);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;

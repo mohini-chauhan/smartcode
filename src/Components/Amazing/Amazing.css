@@ -57,6 +57,37 @@
 }
 .cloud-container{
     width:55%;
+    position: relative;
 }
+.cloud-container .cloud-effect-in{
+    position: absolute;
+    left: 14%;
+    top: 17%;
+    opacity: 0;
+    animation: fadein 1s ease-in-out ;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    0%{ opacity: 0 ;top:10%}
+    25%{opacity: .25}
+    50%{opacity: .5}
+    75%{opacity: .75}
+    100% { opacity: 1;top:17% }
+}
+.cloud-container .cloud-effect-out{
+    position: absolute;
+    left: 14%;
+    top: 17%;
+    opacity: 1;
+    animation: fadeout 1s ease-in-out ;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    0%{ opacity: 1 ;top:17%}
+    25%{opacity: .75}
+    50%{opacity: .5}
+    75%{opacity: .25}
+    100% { opacity: 0;top:10% }
+  }
 
 

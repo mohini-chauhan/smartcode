@@ -13,8 +13,8 @@
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,21rem);
-    grid-gap: 14px;
+    grid-template-columns: repeat(auto-fit,minmax(330px, 1fr));
+    grid-gap: 20px;
 }
 .icons-grid-container{
     width:85%;
