@@ -11,6 +11,8 @@
 width:100%;
 box-shadow: 0 4px 2px 1px var(--primary-light-nav-grey);
 height:72px;
+z-index:99;
+background: var(--primary-nav-white);
 }
 .navbar-brand span{
     padding-left: 10px;

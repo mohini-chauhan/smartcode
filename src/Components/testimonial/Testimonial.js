@@ -1,10 +1,15 @@
 import "./Testimonial.css";
-import React from 'react'
+import React from 'react';
 import rock from "./avatar.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar} from '@fortawesome/free-solid-svg-icons'
-import left from "./arrow-left.svg"
-import right from "./arrow_right.svg"
+import { faStar} from '@fortawesome/free-solid-svg-icons';
+import left from "./arrow-left.svg";
+import right from "./arrow_right.svg";
+import {useState} from "react";
+
+
+
+
 function card(){
     return(
         <div className="card-container">
@@ -27,23 +32,31 @@ function card(){
                     <p className="person-name">Daneil</p>
                     <p>2 days ago</p>
                 </div>
-            </div>
-            
+            </div>            
         </div>
     )
-
 }
 
 const Testimonial = () => {
+    const [count, setcount] = useState(0);
+    function increment() {
+        setcount(count + 1);
+      }
+      function decrement() {
+        if (count > 0) {
+          setcount(count - 1);
+        } else {
+          console.log('invalid');
+        }
+      }
+    
     return (
         <div className="testimonial-container">
             <h2>What people are saying</h2>
             <section className="testimonial-content-wrapper">
                 {card()}
                 {card()}
-                {card()}
-                
-             
+                {card()}                           
             </section>
             <div className="direction-container">
                 <button onClick="">
@@ -51,8 +64,7 @@ const Testimonial = () => {
                 </button>
                 <button onClick="">
                     <img src={right} alt=" left"/>
-                </button>
-                
+                </button>                
             </div>
         </div>
     )

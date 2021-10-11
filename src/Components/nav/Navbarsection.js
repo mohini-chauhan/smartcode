@@ -7,7 +7,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Navbarsection = () => {
     return (
-        <div className="navbar-container">
+        <div className="navbar-container fixed-top ">
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#"><img src={logo} alt="logo"/><span>App</span><FontAwesomeIcon  className="dotIcon" icon={faCircle}></FontAwesomeIcon></a>

@@ -7,6 +7,7 @@ import Icondesc from './Components/icons/Icondesc';
 import Testimonial from './Components/testimonial/Testimonial';
 import Faq from './Components/FAQ/Faq';
 import Footer from './Components/Footer/Footer';
+import Carouseltest from './Components/carousel/Carousel';
 
 import Navbarsection from './Components/nav/Navbarsection';
 
@@ -21,6 +22,7 @@ function App() {
         <Testimonial/>
         <Faq/>
         <Footer/>
+        <Carouseltest/>
     </div>
   );
 }
