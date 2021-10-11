@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-amaze-blgrey:rgba(116, 143, 181, 1);
+    --primary-amaze-black:#000;
+    --primary-amaze-light-grey:rgba(110, 117, 124, 1);
+    --primary-amaze-dark-grey:rgba(39, 46, 53, 1);
+}
+.amazing-container{
+    width:100%;
+    padding:30px;
+}
+.amazing-wrapper{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+}
+.amaze-content{
+    width:80%;
+    padding:32px;
+    margin: 61px 0px;
+    margin-right: 146px;
+}
+.amaze-content .amazing-feature{
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color:var(--primary-amaze-blgrey);
+    text-transform: uppercase;
+}
+.amaze-content h2{
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.amaze-content p{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-amaze-light-grey);
+    margin: 19px 0;
+}
+.amaze-content .amaz-btn{
+    width: 40%;
+    margin-top: 15px;
+    height: 60px;
+    border: 2px solid var(--primary-amaze-dark-grey);
+    border-radius: 15px;
+    background: var(--primary-amaz-white);
+}
+.cloud-container{
+    width:55%;
+}
+
+

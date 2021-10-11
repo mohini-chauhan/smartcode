@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-nav-black:rgba(39, 46, 53, 1);
+    --primary-nav-orange:#FF6E30;
+    --primary-nav-white:#fff;
+    --primary-light-nav-grey:rgba(23, 43, 77, 0.1);
+
+}
+
+.navbar-container{
+width:100%;
+box-shadow: 0 4px 2px 1px var(--primary-light-nav-grey);
+height:72px;
+}
+.navbar-brand span{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.dotIcon{
+    font-size:8px;
+    color:var(--primary-nav-orange);
+}
+.navbar-nav .nav-item .nav-link{
+    color:var(--primary-black);
+}
+.d-flex{
+    border: 2px solid var(--primary-light-nav-grey);
+    border-radius: 5px;
+
+}
+.form-control{
+    border: none !important;
+}
+
+
+
+.sign-btn-button{
+    width:100px;
+    height: 36px;
+    border-radius: 5px;
+    border-style: none;
+    background:var(--primary-nav-orange);
+    color:var(--primary-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 2px;
+
+}
+
+
+
+
+
+

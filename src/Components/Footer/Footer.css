@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-footer-grey:rgba(110, 117, 124, 1);
+
+}
+.footer-container{
+    width:100%;
+    padding:20px;
+}
+.footer-container .footer-header{
+    width:95%;
+    margin:30px auto;
+}
+.footer-header p{   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 20px;
+    color: var(--primary-footer-grey);
+    width: 20%;
+}
+.footer-header hr{
+    width:100%;
+    margin-left:0;
+    border:1px solid var(--primary-footer-grey);
+
+}
+.social-container{
+    width:100%;
+    display:flex;
+}
+.copyright{
+    width: 80%;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:var(--primary-footer-grey);
+
+}
+.social-icons{
+    width: 20%;
+    text-align: end;
+
+}
+.social-icons-img{
+    margin-left: 24px;
+    color:var(--primary-footer-grey);
+}
+
+
+

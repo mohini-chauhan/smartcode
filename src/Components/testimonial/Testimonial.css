@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-test-light-grey:rgba(247, 247, 248, 1);
+    --primary-test-orange:rgba(255, 110, 48, 1);
+    --primary-test-light-black:rgba(39, 46, 53, .8);
+    --primary-test-black:#000;
+
+
+}
+.testimonial-container{
+    width:100%;
+    padding:20px;
+    text-align:center;
+}
+.testimonial-container h2{
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    margin: 52px auto;
+    width: 38%;
+    
+}
+.testimonial-content-wrapper {
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    
+}
+
+.card-container{
+    width:25%;
+    height:auto;
+    text-align:left;
+    margin:0 46px;
+    
+}
+.card-body{
+    width:100%;
+    background: var(--primary-test-light-grey);
+    border-radius: 24px 24px 24px 0px;
+}
+.card-content p{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.rating-container{
+    margin:0 5px;
+    color:var(--primary-test-orange);
+}
+.rating-container .star-icon{
+    margin:0 5px;
+}
+.triangle{
+    width: 0;
+      height: 0;
+      border-top: 43px solid var(--primary-test-light-grey);
+      border-right: 43px solid transparent;
+    
+}
+.person-desc{
+    width:100%;
+    display:flex;
+}
+.person-img img{
+    width:75px;
+    height:75px;
+}
+.person-detail{
+    padding-top: 15px;
+    padding-left: 20px;
+
+}
+
+.person-detail .person-name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:var(--primary-test-black);
+    
+}
+.person-detail p{
+    margin-bottom:0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:var(--primary-test-light-black);
+
+}
+
+.direction-container button{
+    border-style: none;
+    background: #fff;
+    margin: 25px;
+    margin-top: 50px;
+}
+.direction-container button img{
+    width: 60px;
+}

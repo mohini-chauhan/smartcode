@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-faq-white:#fff;
+    --primary-faq-dark-grey:rgba(110, 117, 124, 1);
+    --primary-faq-navy-blue:rgba(44, 53, 61, 1);
+
+}
+.accordian-container{
+    width:100%;
+    padding:20px;
+}
+.accordian-contents{
+   
+    width:95%;
+    margin:30px auto;
+    border-radius: 24px;
+    background:var(--primary-faq-navy-blue);
+    
+}
+.accordian-container h2{
+    font-family: Poppins;
+    margin: 30px auto;
+    width: 35%;
+    font-size: 49px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 0em;
+    padding-top: 8%;
+    text-align: center;
+    color: var(--primary-faq-white);  
+
+}
+.content-container{
+    display:flex;
+    padding:50px;
+    color:var(--primary-faq-white);
+}
+.basic-container{
+    width:50%;
+    padding:0 50px;
+}
+.content-container .basic-container hr{
+    width:100%;
+    margin:40px 0;
+    color:var(--primary-faq-white);
+}
+.content-container .basic-container h3{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.faq-button{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    background: #fff0;
+    border-style: none;
+    color: rgba(255, 255, 255, .7);
+}
+.faq-button-onclick{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    background: #fff0;
+    border-style: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.question{
+    width:95%;
+}
+.answer{
+    color: rgba(255, 255, 255, .7);
+    width: 95%;
+
+}
+.accordian-container-img{
+    width: fit-content;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.accordian-container-img .SFL{
+    position: absolute;
+    top: -10%;
+    left: 27%;
+    animation: SFLmove 3s linear infinite;
+}
+@keyframes SFLmove {
+    0%   {top: -10%;}
+    50%  {top: -20%;}
+    100% {top: -10%;}
+
+  }
+
+.accordian-container-img .SFR{
+    position: absolute;
+    right: 23%;
+    top: 0%;
+    animation: SFRmove 3s linear infinite;
+}
+@keyframes SFRmove {
+    0%   {top: 0%;}
+    50%  {top: 7%;}
+    100% {top: 0%;}
+
+  }
+
+
+

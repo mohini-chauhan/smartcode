@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-bluish-feature-grey:rgba(116, 143, 181, 1);
+    --primary-feature-orange:#FF6E30;
+    --primary-dark-feature-grey: #6E757C;
+    --primary-feature-white:#fff;
+    --primary-light-feature-grey:rgba(116, 143, 181, 1);
+    --primary-feature-light:rgba(255, 255, 255, 1);
+
+
+}
+.features-container{
+    width:100%;
+    padding:30px;
+}
+.feature-wrapper{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+}
+.anime-feature{
+    position:relative;
+}
+.anime-feature{
+    width:50%;
+    position:relative;
+}
+.anime-feature .SL{
+    position:absolute;
+    top: 30%;
+    left: 15%;
+    animation: SLmove 4s linear infinite;
+
+}
+
+@keyframes SLmove {
+    0%   {top: 30%;}
+    50%  {top: 40%;}
+    100% {top: 30%;}
+
+  }
+.anime-feature .Iphn{
+    position:absolute;
+}
+.anime-feature .SR{
+    position:absolute;
+    top: 24%;
+    right: 21%;
+    animation: SRmove 4s linear infinite;
+    
+    
+    
+}
+
+@keyframes SRmove {
+    0%   {top: 24%;}
+    50%  {top: 14%;}
+    100% {top: 24%;}
+
+  }
+.feature-content{
+
+    width:50%;
+    padding:30px;
+    margin: 61px 0px;
+    margin-left: 146px;
+}
+.feature-content .amaz-feature{
+
+font-size: 15px;
+font-weight: 800;
+line-height: 16px;
+letter-spacing: 0.1em;
+text-align: left;
+color:var(--primary-bluish-feature-grey);
+text-transform: uppercase;
+}
+.feature-content h2{
+font-family: Poppins;
+font-size: 50px;
+font-weight: 600;
+line-height: 62px;
+letter-spacing: 0em;
+text-align: left;
+margin:5px 0;
+
+}
+.feature-content p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-dark-feature-grey);
+    margin: 19px 0;
+    
+
+}
+.feature-content .feature-btn{
+    width: 80%;
+    margin-top: 15px;
+    height: 15%;
+    border: 2px solid var(--primary-dark-feature-grey);
+    border-radius: 15px;
+    background: var(--primary-feature-white);
+}
