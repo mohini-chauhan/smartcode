@@ -18,7 +18,7 @@ function Appicon(toggle,data){
         </div>
     )
 }
-
+//for generating the icon section of banner area dynamically
 const Hero = () => {
     var appData1={
         "icon":dwnld,

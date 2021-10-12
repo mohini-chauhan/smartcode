@@ -10,7 +10,7 @@ import 'swiper/dist/css/swiper.css'
 
 
 
-
+//function for making the testimonial card
 function card(){
     return(
         <>
@@ -86,13 +86,9 @@ const Testimonial = () => {
                 <div>{card()}</div>
                 <div>{card()}</div>
                 <div>{card()}</div>
-
-                <div>{card()}</div>
-            
-            </Swiper>
-                        
-            </section>
-            
+                <div>{card()}</div>            
+            </Swiper>                        
+            </section>            
         </div>
     )
 }
