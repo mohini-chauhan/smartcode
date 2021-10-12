@@ -14,21 +14,20 @@
     padding:30px;
 }
 .feature-wrapper{
-    width:80%;
+    width:90%;
     margin:0 auto;
     display:flex;
 }
+
 .anime-feature{
-    position:relative;
-}
-.anime-feature{
-    width:50%;
+    width:60%;
     position:relative;
 }
 .anime-feature .SL{
+    width: 16%;
     position:absolute;
     top: 30%;
-    left: 15%;
+    left: 20%;
     animation: SLmove 4s linear infinite;
 
 }
@@ -40,9 +39,12 @@
 
   }
 .anime-feature .Iphn{
-    position:absolute;
+    position:relative;
+    width: 100%;
+    height: 100%;
 }
 .anime-feature .SR{
+    width: 15%;
     position:absolute;
     top: 24%;
     right: 21%;
@@ -60,10 +62,10 @@
   }
 .feature-content{
 
-    width:50%;
+    width:40%;
     padding:30px;
     margin: 61px 0px;
-    margin-left: 146px;
+    margin-left: auto;
 }
 .feature-content .amaz-feature{
 
@@ -99,8 +101,32 @@ margin:5px 0;
 .feature-content .feature-btn{
     width: 80%;
     margin-top: 15px;
-    height: 15%;
+    height: 11%;
     border: 2px solid var(--primary-dark-feature-grey);
     border-radius: 15px;
     background: var(--primary-feature-white);
+}
+
+
+
+@media(max-width:922px){
+    .feature-wrapper{
+        display: block;
+    }
+    .anime-feature{
+        width: 90%;
+        margin: auto;
+    }
+    .feature-content{
+        width: 100%;
+        margin: auto;
+    }
+    .feature-content h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .feature-content .feature-btn{
+        width: 54%;
+        height: 60px;
+    }
 }

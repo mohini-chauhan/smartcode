@@ -10,15 +10,18 @@
     padding:30px;
 }
 .amazing-wrapper{
-    width:80%;
+    width:90%;
     margin:0 auto;
     display:flex;
 }
+.amaze-section{
+    width: 39%;
+}
 .amaze-content{
-    width:80%;
+    width:100%;
     padding:32px;
     margin: 61px 0px;
-    margin-right: 146px;
+    margin-right: auto;
 }
 .amaze-content .amazing-feature{
     font-size: 15px;
@@ -48,7 +51,7 @@
     margin: 19px 0;
 }
 .amaze-content .amaz-btn{
-    width: 40%;
+    width: 45%;
     margin-top: 15px;
     height: 60px;
     border: 2px solid var(--primary-amaze-dark-grey);
@@ -56,7 +59,7 @@
     background: var(--primary-amaz-white);
 }
 .cloud-container{
-    width:55%;
+    width:59%;
     position: relative;
 }
 .cloud-container .cloud-effect-in{
@@ -89,5 +92,37 @@
     75%{opacity: .25}
     100% { opacity: 0;top:10% }
   }
-
+/********************************************************Meadia Query*******************************************************************/
+@media (max-width:992px){
+    .amazing-wrapper{
+       
+        display:block;
+    }
+    .cloud-container{
+        width: 100%;
+    }
+    .cloud-container .cloud-effect-in{
+        width: 34%;
+    }
+    .cloud-platform{
+        width: 100%;
+    }
+    .amaze-section{
+        width: 100%;
+    }
+    .amaze-content h2{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .amaze-content p{
+        font-size: 15px;
+    }
+    .amaze-content .amaz-btn{
+        width: 50%;
+    }
+    .amaze-content{
+        margin: 0;
+    margin-right: auto;
+    }
+}
 

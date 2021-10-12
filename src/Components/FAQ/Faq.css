@@ -11,7 +11,7 @@
 }
 .accordian-contents{
    
-    width:95%;
+    width:100%;
     margin:30px auto;
     border-radius: 24px;
     background:var(--primary-faq-navy-blue);
@@ -125,6 +125,7 @@
     }
     .basic-container{
         width:100%;
+        padding: 0 20px;
     }
     .content-container .basic-container hr{
         margin:16px 0;

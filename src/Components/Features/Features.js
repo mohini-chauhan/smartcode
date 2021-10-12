@@ -12,8 +12,9 @@ const Features = () => {
             <section className="feature-wrapper">
                 <article className="anime-feature">
                     <img className="SL" src={speachbubbleL} alt="speachIcon"/>
-                    <img className="Iphn" src={travel} alt="iphone"/>
                     <img className="SR" src={speachbubbleR} alt="Speach-Icon"/>
+                    <img className="Iphn" src={travel} alt="iphone"/>
+                    
                 </article>
                 <article className="feature-content">
                     <p className="amaz-feature">Amazing features</p>

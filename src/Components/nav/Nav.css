@@ -6,7 +6,12 @@
     --primary-light-nav-grey:rgba(23, 43, 77, 0.1);
 
 }
-
+.navbar{
+    background: var(--primary-nav-white);
+}
+.navbar-light .navbar-toggler{
+    color: var(--primary-nav-white);
+}
 .navbar-container{
 width:100%;
 box-shadow: 0 4px 2px 1px var(--primary-light-nav-grey);

@@ -135,3 +135,20 @@
 .swiper-container{
     height:fit-content !important;
 }
+
+
+
+
+
+@media(max-width:922px){
+    .testimonial-container h2{
+        font-size: 45px;
+        width: 90%;
+    }
+    .testimonial-content-wrapper{
+        width:80%;
+    }
+    .card-content p{
+        font-size: 18px;
+    }
+}

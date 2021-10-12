@@ -11,9 +11,9 @@ const Amazing = () => {
            // scroll display cloud function
            const displaycloud = () => {
              console.log(window.scrollY)
-             if (window.scrollY >= 1850 && !cloud) {
+             if (window.scrollY >= 2050 && !cloud) {
                 setCloud(true)
-             } else if(window.scrollY < 1850 && cloud) {
+             } else if(window.scrollY < 2050 && cloud) {
                 setCloud(false)
              }
            }
@@ -29,7 +29,7 @@ const Amazing = () => {
     return (
         <div className="amazing-container">
             <div className="amazing-wrapper">
-                <section>
+                <section className="amaze-section">
                     <article className="amaze-content">
                         <p className="amazing-feature">amazing features</p>
                         <h2>Never forget anything, ever again</h2>
@@ -39,7 +39,7 @@ const Amazing = () => {
                 </section>
                 <section className="cloud-container">
                     <img className={cloud?"cloud-effect-in":"cloud-effect-out"} src={cloud_scroll} alt="effect"/>
-                    <img src={cloudimg} alt="cloud"/>
+                    <img className="cloud-platform" src={cloudimg} alt="cloud"/>
                 </section>
             </div>
             

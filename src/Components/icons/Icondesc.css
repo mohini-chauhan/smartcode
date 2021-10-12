@@ -10,7 +10,7 @@
 }
 .iconsdesc-container .icondesc-wrapper{
     
-    width: 95%;
+    width: 96%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(330px, 1fr));
