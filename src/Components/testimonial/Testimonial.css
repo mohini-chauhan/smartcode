@@ -11,6 +11,7 @@
     width:100%;
     padding:20px;
     text-align:center;
+    
 }
 .testimonial-container h2{
     font-family: Poppins;
@@ -23,23 +24,29 @@
     
 }
 .testimonial-content-wrapper {
-    width:80%;
+    width:60%;
     margin:0 auto;
     display:flex;
     
+    
+}
+.testimonial-content-wrapper{
+    transform: scale(1.1);
 }
 
+
 .card-container{
-    width:25%;
+    width: 23% ;
     height:auto;
     text-align:left;
-    margin:0 46px;
+    margin:0 14px;
     
 }
 .card-body{
     width:100%;
     background: var(--primary-test-light-grey);
     border-radius: 24px 24px 24px 0px;
+    padding:2rem;
 }
 .card-content p{
     font-family: Poppins;
@@ -98,12 +105,33 @@
 
 }
 
-.direction-container button{
-    border-style: none;
-    background: #fff;
-    margin: 25px;
-    margin-top: 50px;
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative !important;
+  top: 0;
+  width: 27px;
+  height: 44px;
+  margin: 5px auto !important;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.direction-container button img{
-    width: 60px;
+.swiper-button-next{
+    background-image: url("./arrow_right.svg") !important;
+    width: 60px !important;
+    background-size: contain !important;
+    left:52px !important;
+    top:50px !important;
+}
+.swiper-button-prev{
+    background-image: url("./arrow-left.svg") !important;
+    width: 60px !important;
+    background-size: contain !important;
+    left:-52px !important;
+}
+.swiper-container{
+    height:fit-content !important;
 }

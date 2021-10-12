@@ -5,6 +5,9 @@ import { Carousel } from 'react-responsive-carousel';
 import person from "./avatar.jpg";
 
 export default class Carouseltest extends Component {
+    
+
+
     render() {
       return (
           

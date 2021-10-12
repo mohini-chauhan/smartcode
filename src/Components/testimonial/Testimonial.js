@@ -5,14 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar} from '@fortawesome/free-solid-svg-icons';
 import left from "./arrow-left.svg";
 import right from "./arrow_right.svg";
-import {useState} from "react";
+import Swiper from 'react-id-swiper';
+import 'swiper/dist/css/swiper.css'
 
 
 
 
 function card(){
     return(
-        <div className="card-container">
+        <>
             <div className="card-body">
                 <div className="card-content">
                     <p>“ Solo is a powerful app that can connect a lot of services I’m using. It is so flexible!”</p>
@@ -33,39 +34,65 @@ function card(){
                     <p>2 days ago</p>
                 </div>
             </div>            
-        </div>
+        </>
     )
 }
 
 const Testimonial = () => {
-    const [count, setcount] = useState(0);
-    function increment() {
-        setcount(count + 1);
+    const params = {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centeredSlides: false,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          loop: true,
+          breakpoints: {
+            1920: {
+              slidesPerView: 3,
+              spaceBetween: 50
+            },
+            1200: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            }
+          }
+       
       }
-      function decrement() {
-        if (count > 0) {
-          setcount(count - 1);
-        } else {
-          console.log('invalid');
-        }
-      }
-    
+  
+
+
     return (
         <div className="testimonial-container">
             <h2>What people are saying</h2>
             <section className="testimonial-content-wrapper">
-                {card()}
-                {card()}
-                {card()}                           
+            <Swiper {...params}>
+                <div>{card()}</div>
+                <div>{card()}</div>
+                <div>{card()}</div>
+                <div>{card()}</div>
+                <div>{card()}</div>
+                <div>{card()}</div>
+
+                <div>{card()}</div>
+            
+            </Swiper>
+                        
             </section>
-            <div className="direction-container">
-                <button onClick="">
-                    <img src={left} alt=" left"/>
-                </button>
-                <button onClick="">
-                    <img src={right} alt=" left"/>
-                </button>                
-            </div>
+            
         </div>
     )
 }
