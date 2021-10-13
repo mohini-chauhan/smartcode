@@ -2,7 +2,7 @@ import "./Amazing.css";
 import React, {useState, useEffect } from 'react';
 import cloudimg from "./cloud3.png"
 import cloud_scroll from "./Cloud-scroll.png"
-
+//function for diplaying the motion of cloud on scroll using react hooks
 const Amazing = () => {
 
            //Amazing scroll when active state

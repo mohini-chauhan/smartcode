@@ -10,7 +10,7 @@ import 'swiper/dist/css/swiper.css'
 
 
 
-//function for making the testimonial card
+//function for making the testimonial card component
 function card(){
     return(
         <>

@@ -8,6 +8,7 @@ import support from "./support.png";
 import paper from "./paper.png";
 import wrkflow from "./r-chat.png";
 import puzzle from "./puzzle.png";
+//function for generating the icon section dynamically
 function Featureicon(data){
     return(
         <div className="icons-grid-container">

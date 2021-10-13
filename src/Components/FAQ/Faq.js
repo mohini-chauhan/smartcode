@@ -6,7 +6,7 @@ import { Component } from "react";
 import clock from "./clock12.png";
 import SpeachR from "./SFR.png";
 import SpeachL from "./SPL.png";
-
+// for generating the Q&A section dynamically
 class Counter1 extends Component {
     constructor(props) {
       super(props);

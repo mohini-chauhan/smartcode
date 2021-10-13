@@ -4,14 +4,11 @@
     --primary-test-orange:rgba(255, 110, 48, 1);
     --primary-test-light-black:rgba(39, 46, 53, .8);
     --primary-test-black:#000;
-
-
 }
 .testimonial-container{
     width:100%;
     padding:20px;
-    text-align:center;
-    
+    text-align:center;    
 }
 .testimonial-container h2{
     font-family: Poppins;
@@ -30,11 +27,6 @@
     
     
 }
-.testimonial-content-wrapper{
-    transform: scale(1.1);
-}
-
-
 .card-container{
     width: 23% ;
     height:auto;

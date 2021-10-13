@@ -57,9 +57,7 @@ const Navbarsection = () => {
                         </form>
                     </div>
                 </div>
-            </nav>
-
-            
+            </nav>            
         </div>
     )
 }
