@@ -3,14 +3,12 @@ import React from 'react';
 import rock from "./avatar.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar} from '@fortawesome/free-solid-svg-icons';
-import left from "./arrow-left.svg";
-import right from "./arrow_right.svg";
 import Swiper from 'react-id-swiper';
 import 'swiper/dist/css/swiper.css'
 
 
 
-//function for making the testimonial card component
+//function for making the single reusable testimonial card component
 function card(){
     return(
         <>
@@ -39,6 +37,7 @@ function card(){
 }
 
 const Testimonial = () => {
+  //properties for the swiper component to create slider
     const params = {
         slidesPerView: 3,
         spaceBetween: 50,

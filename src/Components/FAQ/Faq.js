@@ -19,8 +19,7 @@ class Counter1 extends Component {
       this.setState({ value: !this.state.value });     
     };
     render() {
-        console.log(this.state.value,this.props)
-      return (
+          return (
             <>
           <button className={this.state.value?"faq-button-onclick":"faq-button"} onClick={this.toggle}>
               <p className="question">{this.props.text.Q}</p>
@@ -35,6 +34,7 @@ class Counter1 extends Component {
 
 
 const Faq = () => {
+    //object to store different values for FAQ components
    var  q1={'Q':"How does it work?",
         'Ans':"4,730 curated design resources to energize your creative workflow. We're a growing family of 382,081 designers and makers from around the world. 4,730 curated design resources to energize your creative workflow."   
             }

@@ -4,7 +4,7 @@ import travel from "./Travel3iphonedesign11.png";
 import speachbubbleL from "./Speachbubble.png";
 import speachbubbleR from "./Speachbubble2.png"
 
-
+//feature section including the iphone and speachbubble animation
 
 const Features = () => {
     return (

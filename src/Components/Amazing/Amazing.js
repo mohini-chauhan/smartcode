@@ -10,8 +10,7 @@ const Amazing = () => {
   
            // scroll display cloud function
            const displaycloud = () => {
-             console.log(window.scrollY)
-             if (window.scrollY >= 2050 && !cloud) {
+              if (window.scrollY >= 2050 && !cloud) {
                 setCloud(true)
              } else if(window.scrollY < 2050 && cloud) {
                 setCloud(false)

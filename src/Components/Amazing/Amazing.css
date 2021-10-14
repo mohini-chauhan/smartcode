@@ -126,3 +126,15 @@
     }
 }
 
+@media(max-width:577px) {
+    .amaze-content .amaz-btn{
+        width:80%;
+    }
+    .amazing-container{
+        padding:10px;
+    }
+    .amaze-content{
+        padding:5px;
+    }
+    
+}

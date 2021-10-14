@@ -15,7 +15,7 @@ const Navbarsection = () => {
   
        //navbar scroll change button function
        const changebutton = () => {
-         console.log(window.scrollY)
+        
          if (window.scrollY >= 66) {
            setNavbar(true)
          } else {
@@ -35,18 +35,18 @@ const Navbarsection = () => {
         <div className="navbar-container fixed-top ">
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#"><img src={logo} alt="logo"/><span>App</span><FontAwesomeIcon  className="dotIcon" icon={faCircle}></FontAwesomeIcon></a>
+                    <a className="navbar-brand" href="/"><img src={logo} alt="logo"/><span>App</span><FontAwesomeIcon  className="dotIcon" icon={faCircle}></FontAwesomeIcon></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Home</a>
+                                <a className="nav-link" href="/">Home</a>
                              </li>
                              <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
+                                <a className="nav-link" href="/">About</a>
                              </li>
                              <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
+                                <a className="nav-link" href="/">Contact</a>
                              </li>
 
                             

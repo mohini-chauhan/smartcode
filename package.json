@@ -19,7 +19,6 @@
     "react-responsive-carousel": "^3.2.21",
     "react-scripts": "4.0.3",
     "swiper": "^4.0.7",
-    "ua-parser-js": "^0.7.28",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

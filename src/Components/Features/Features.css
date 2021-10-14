@@ -130,3 +130,14 @@ margin:5px 0;
         height: 60px;
     }
 }
+@media(max-width:577px){
+    .feature-content .feature-btn{
+        width:80%;
+    }
+    .features-container{
+        padding:10px;
+    }
+    .feature-content{
+        padding:5px;
+    }
+}
