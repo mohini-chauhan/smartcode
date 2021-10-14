@@ -1,10 +1,14 @@
 # SmartCode- A full responsive react app
 
+## Live Demo :
+```
+https://smartercode-d5499.web.app/
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
-
+https://smartercode-d5499.web.app/
 ### `npm start`
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Runs the app in the development mode.\
